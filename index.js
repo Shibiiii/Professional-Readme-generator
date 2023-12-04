@@ -33,7 +33,29 @@ const questions = [
             message: 'What is the description of your project?',
         },
         {
-            
+            type: 'input',
+            name: 'installation',
+            message: 'What installation instructions does the user need?',
+        },
+        {
+            type: 'input',
+            name: 'usage',
+            message: 'What usage information does the user need?',
+        },
+        {
+            type: 'input',
+            name: 'contribution',
+            message: 'Who contributed to this project?',
+        },
+        {
+            type: 'input',
+            name: 'test',
+            message: 'What test insturctions does the user need?',
+        },
+        {
+            type: 'list',
+            name: 'license',
+            options: ['MIT license', '']
         }
     ])
 ];
