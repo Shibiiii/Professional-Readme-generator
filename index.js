@@ -1,3 +1,21 @@
+// Template for README
+`# TITLE
+
+# LISENCE
+
+# DESCRIPTION
+
+# TABLE OF CONTENTS
+
+# INSTALLATION
+
+# USAGE
+
+# CONTRIBUTION
+
+# TESTS
+
+# QUESTIONS`
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
