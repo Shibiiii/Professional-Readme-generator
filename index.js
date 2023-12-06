@@ -1,21 +1,23 @@
 // Template for README
-`# TITLE
+const generateMD = ({ title, lisence, description, tableOfContents, installation, usage, contribution, tests, questions}) =>
+`# ${title}
 
 # LISENCE
-
+${lisence}
 # DESCRIPTION
-
+${description}
 # TABLE OF CONTENTS
-
+${tableOfContents}
 # INSTALLATION
-
+${installation}
 # USAGE
-
+${usage}
 # CONTRIBUTION
-
+${contribution}
 # TESTS
-
-# QUESTIONS`
+${tests}
+# QUESTIONS
+${questions}`
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
