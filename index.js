@@ -57,7 +57,17 @@ const questions = [
         {
             type: 'list',
             name: 'license',
-            options: ['MIT license', '']
+            options: ['MIT license', 'Mozilla public license 2.0', 'Apache license 2.0', 'The unlicense'],
+        },
+        {
+            type: 'input',
+            name: 'github',
+            message: 'What is your GitHub username?',
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'What is your email?'
         }
     ])
 ];
