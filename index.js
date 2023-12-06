@@ -17,7 +17,8 @@ ${contribution}
 # TESTS
 ${tests}
 # QUESTIONS
-${questions}`
+Contact me if you have questions
+${questions}`;
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
@@ -73,7 +74,11 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    const fileContent = generateMD(answers);
+
+    fs.writeFile('example.md', fileContent, (err) => err? console.log(err) : console.log('Created ReadMe file'));
+}
 
 // TODO: Create a function to initialize app
 function init() {}
